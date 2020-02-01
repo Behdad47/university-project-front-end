@@ -7,75 +7,81 @@
     <meta http-exquiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>kilid</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+    <script src="./scripts/scripts.js"></script>
+
 </head>
 
 <body>
-    <nav class="d-flex flex-row-reverse navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">بخرفروش</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+<nav class="d-flex flex-row-reverse navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">بخرفروش</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="d-flex flex-row-reverse collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">خرید<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <button class="btn btn-sm btn-outline-secondary" my-2 my-sm-0" onclick="signUp()">
-                            ثبت نام
-                        </button>
-                        <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a onclick="login()" class="nav-link" href="#">ورود<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">آژانس‌های املاک</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">
-                        ثبت آگهی
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">فروش</a>
-                        <a class="dropdown-item" href="#">رهن</a>
-                        <a class="dropdown-item" href="#">اجاره</a>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <form style="display: none" id="sign_up" class="box" action="index.html" method="post">
-        <h1>Sign Up</h1>
-        <input type="text" name="" placeholder="First Name">
-        <input type="text" name="" placeholder="Last Name">
-        <input type="text" name="" placeholder="Email or Phone">
-        <input type="password" name="" placeholder="Password">
-        <input type="password" name="" placeholder="Enter Password Again">
-        <input type="submit" name="" value="Sign">
-    </form>
-    <form style="display: none" id="log_in" class="box" action="index.html" method="post">
-        <h1>Login</h1>
-        <input type="text" name="" placeholder="Username">
-        <input type="password" name="" placeholder="password">
-        <input type="submit" name="" value="Login">
-    </form>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-    <script src="/scripts/scripts.js"></script>
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="d-flex flex-row-reverse collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#">خرید<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <button class="btn btn-sm btn-outline-secondary" my-2 my-sm-0
+                    " onclick="signUp()">
+                    ثبت نام
+                    </button>
+                    <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a onclick="login()" class="nav-link" href="#">ورود<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">آژانس‌های املاک</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                    ثبت آگهی
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">فروش</a>
+                    <a class="dropdown-item" href="#">رهن</a>
+                    <a class="dropdown-item" href="#">اجاره</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+<form style="display: none" id="sign_up" class="box" action="index.html" method="post">
+    <h1>Sign Up</h1>
+    <input type="text" name="" placeholder="First Name">
+    <input type="text" name="" placeholder="Last Name">
+    <input type="text" name="" placeholder="Email or Phone">
+    <input type="password" name="" placeholder="Password">
+    <input type="password" name="" placeholder="Enter Password Again">
+    <input type="submit" name="" value="Sign">
+</form>
+<form style="display: none" id="log_in" class="box" action="index.html" method="post">
+    <h1>Login</h1>
+    <input type="text" name="" placeholder="Username">
+    <input type="password" name="" placeholder="password">
+    <input type="submit" name="" value="Login">
+</form>
 
 </body>
 

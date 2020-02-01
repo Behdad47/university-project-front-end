@@ -1,4 +1,3 @@
-
 function signUp() {
     var signUpVar = document.getElementById("sign_up");
     console.log(signUp);
